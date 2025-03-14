@@ -20,7 +20,7 @@ const CardCTA: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`w-1/3 min-h-64 p-4 bg-white shadow-[0px_0px_50px_3px_#00000024] flex flex-col justify-evenly rounded-lg cursor-pointer hover:shadow-[0px_0px_50px_3px_#f9731644] hover:outline-[2px] hover:outline-[#f9731624] ${
+      className={`w-full md:w-4/5 lg:w-1/3 min-h-64 p-4 bg-white shadow-[0px_0px_50px_3px_#00000024] flex flex-col justify-evenly rounded-lg cursor-pointer hover:shadow-[0px_0px_50px_3px_#f9731644] hover:outline-[2px] hover:outline-[#f9731624] ${
         isActive ? 'border-[2px] border-[#f97316]' : 'border-[2px]'
       }`}
       onClick={onSelect}
@@ -47,20 +47,20 @@ const CardCTA: React.FC<CardProps> = ({
 const CallToAction: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   return (
-    <section className='flex flex-col items-center justify-evenly h-[90vh] p-8'>
+    <section className='flex flex-col items-center justify-evenly min-h-[90vh] gap-5 p-8'>
       <div className='flex flex-col items-center justify-between gap-6'>
-        <h1 className='text-5xl font-bold text-[#1b355b]'>
+        <h1 className='text-4xl md:text-5xl font-bold text-[#1b355b] text-center'>
           Build Your{' '}
           <span className='bg-gradient-to-r from-[#f97316] to-[#1b355b] text-transparent bg-clip-text'>
             Dream Home
           </span>
         </h1>
-        <p className='w-[38rem] text-lg text-center text-[#3b557b]'>
+        <p className='w-full max-w-[38rem] text-lg text-center text-[#3b557b]'>
           Expert craftsmanship, innovative designs, and exceptional quality.
           Choose your path to begin the journey.
         </p>
       </div>
-      <div className='flex flex-row items-center justify-evenly w-full px-10 gap-10'>
+      <div className='flex flex-col md:flex-row items-center justify-evenly w-full px-4 md:px-10 gap-6 md:gap-10'>
         <CardCTA
           Icon={LuHouse}
           title='Free Quote'
