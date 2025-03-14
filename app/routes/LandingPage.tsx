@@ -1,6 +1,7 @@
 import type { Route } from "./+types/LandingPage";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import CallToAction from "../components/CallToAction";
 import Mission from "~/components/Mission";
 import ServiceCard from "~/components/ServiceCard";
 import ServiceCarousel from "~/components/ServiceCarousel";
@@ -147,6 +148,7 @@ export default function LandingPage() {
       />
       <Mission title="Our Mission" image="/house.png"
                     text="Our mission is to create remarkable spaces that stand the test of time. From engineering and permits to execution and meticulous quality control, we manage every detail to empower our clients to focus on their vision and goals. Backed by our investment division, ZZZ Ventures Capital, we offer a full-service approach that merges top-tier craftsmanship with strategic financial insight. By uniting construction expertise with investment intelligence, we transform spaces into assets that generate lasting value and foster enduring trust." />
+      <CallToAction />      
       <section className="px-6 py-8 bg-white">
       {/* Section Title */}
       <div className="text-center mb-8">
