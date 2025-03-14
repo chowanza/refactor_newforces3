@@ -2,8 +2,8 @@ import React from 'react';
 
 const LeadCapture: React.FC = () => {
   return (
-    <div className='w-[40vw] h-full z-10 flex justify-center items-center'>
-      <div className='w-4/5 px-6 py-4 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg'>
+    <div className='md:w-[40vw] w-full md:h-full h-[50vh] z-10 flex justify-center items-center'>
+      <div className='w-4/5 px-6 md:py-4 py-3 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg'>
         <h2 className='text-xl font-semibold text-gray-800 mb-4 text-center'>
           Request Your Free Estimate Now!
         </h2>
@@ -12,23 +12,23 @@ const LeadCapture: React.FC = () => {
             type='text'
             placeholder='Full Name'
             required
-            className='w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-500'
+            className='w-full p-2 border-[2px] rounded-md focus:border-[#f97316]'
           />
           <input
             type='tel'
             placeholder='Phone Number'
             required
-            className='w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-500'
+            className='w-full p-2 border-[2px] rounded-md focus:border-[#f97316]'
           />
           <input
             type='email'
             placeholder='Email Address'
             required
-            className='w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-500'
+            className='w-full p-2 border-[2px] rounded-md focus:border-[#f97316]'
           />
           <select
             required
-            className='w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-500'
+            className='w-full p-2 border-[2px] rounded-md focus:border-[#f97316]'
           >
             <option value='' disabled selected>
               Project Type
@@ -40,11 +40,11 @@ const LeadCapture: React.FC = () => {
           </select>
           <textarea
             placeholder='Message (Optional)'
-            className='w-full p-2 border rounded-md focus:ring-2 focus:ring-purple-500'
+            className='w-full p-2 border-[2px] rounded-md focus:border-[#f97316]'
           ></textarea>
           <button
             type='submit'
-            className='w-full bg-orange-500 text-white p-2 rounded-md hover:bg-orange-600 transition'
+            className='w-full bg-[#f97316] text-white p-2 rounded-md hover:bg-[#f86306] transition'
           >
             Submit
           </button>

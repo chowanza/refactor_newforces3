@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section
-      className='relative flex items-center justify-center min-h-screen bg-cover bg-center'
+      className='relative flex items-center md:justify-center justify-evenly min-h-screen bg-cover bg-center md:flex-row flex-col'
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({
             'linear-gradient(to bottom, rgba(27, 53, 91, 0.95) 75%, rgba(255, 255, 255, 1) 100%)',
         }}
       ></div>
-      <div className='relative z-10 text-center px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full'>
+      <div className='md:w-[60vw] w-full relative z-10 text-center px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full'>
         {home && <p className='text-3xl'>We are</p>}
         <h1 className='text-5xl text-norange md:text-4xl lg:text-5xl font-bold  mb-4'>
           {title}
@@ -50,8 +50,8 @@ const Hero: React.FC<HeroProps> = ({
         <div>
           <h2 className='font-bold text-2xl'>Get a Free Quote Today!</h2>
           <div className='flex items-center justify-center m-4'>
-            <button className='px-5 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer text-2xl'>
-              Start Your Project – Contact Us!
+            <button className='px-5 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl'>
+              Start Your Project!
             </button>
           </div>
         </div>
