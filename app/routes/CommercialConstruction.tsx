@@ -7,6 +7,7 @@ import ServiceCard from "~/components/ServiceCard";
 import Carousel from "~/components/Carousel";
 import Selector from "~/components/ImageSelector";
 import Footer from "~/components/Footer";
+import CallToAction from "../components/CallToAction";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -27,7 +28,7 @@ export default function CommercialConstruction() {
       title="New Force Construction LLC" 
       subtitle="Exceptional Residential Construction & Remodeling" 
       description="Building Excellence for Your Business Design, Build, Renovate – Your Vision, Our Expertise" 
-      buttonText="Get a Quote" 
+      buttonText="About" 
       onButtonClick={()=>{}} 
       backgroundImage="/hero-saratosa.png"></Hero>
       <div>
@@ -50,7 +51,7 @@ export default function CommercialConstruction() {
         
         </div>
       </div>
-      <div className="justify-center items-center">
+      <div className="justify-center items-center mb-20">
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl">Pre-Construction</h2>
         <p className="mr-auto ml-auto max-w-5xl text-black text-xl text-center">We believe successful projects start with meticulous planning. Our experienced team works closely with you to evaluate your goals, develop cost-effective solutions, and create a roadmap for success.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
@@ -60,6 +61,7 @@ export default function CommercialConstruction() {
           <Card descripcion="Risk assessment and mitigation strategies" number="04" icon="/Carretilla.svg" imageSrc="/72.jpeg" />
         </div>
       </div>
+      <CallToAction />
       <div className="mt-20 md:mt-32">
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl">Design-Build Services</h2>
         <p className="mr-auto ml-auto max-w-5xl text-black text-xl text-center p-10">Simplify your project with our design-build approach, where creativity meets efficiency. We manage both design and construction under one roof, ensuring seamless coordination and better outcomes.</p>
@@ -116,6 +118,7 @@ export default function CommercialConstruction() {
         <p className="mt-5 mb-5 p-10 text-xl text-center rounded-xl  text-black border-4"><b>Warehouses & Industrial Facilities:</b> Built for efficiency and scalability.</p>
 
       </div>
+    <CallToAction />
     <Footer/>
     </div>
   );

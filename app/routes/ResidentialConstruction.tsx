@@ -9,6 +9,7 @@ import ContactForm from "../components/ContactForm";
 import Carousel from "~/components/Carousel";
 import Footer from "~/components/Footer";
 import TestimonialsSection from "~/components/TestimonialsSection";
+import CallToAction from "../components/CallToAction";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -116,6 +117,7 @@ export default function ResidentialConstruction() {
     </Card>
   </div>
 </section>
+<CallToAction />
 <ContactBanner />
 <section className="px-6 py-16 bg-white text-center">
         <h2 className="text-2xl md:text-5xl font-bold text-norange mt-10 mb-10">

@@ -26,7 +26,7 @@ const CardCTA: React.FC<CardProps> = ({
       onClick={onSelect}
     >
       <div
-        className={`self-start rounded-full w-[3.25rem] h-[3.25rem] grid place-items-center shadow-[0px_0px_50px_1px_#00000024] ${
+        className={`self-start rounded-full w-[3.25rem] h-[3.25rem] grid place-items-center shadow-[0px_0px_50px_1px_#00000024] text-2xl ${
           isActive ? 'bg-[#f97316] text-white' : 'text-[#1b355b]'
         }`}
       >

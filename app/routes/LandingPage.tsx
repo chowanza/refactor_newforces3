@@ -148,7 +148,7 @@ export default function LandingPage() {
       />
       <Mission title="Our Mission" image="/house.png"
                     text="Our mission is to create remarkable spaces that stand the test of time. From engineering and permits to execution and meticulous quality control, we manage every detail to empower our clients to focus on their vision and goals. Backed by our investment division, ZZZ Ventures Capital, we offer a full-service approach that merges top-tier craftsmanship with strategic financial insight. By uniting construction expertise with investment intelligence, we transform spaces into assets that generate lasting value and foster enduring trust." />
-      <CallToAction />      
+      <CallToAction />     
       <section className="px-6 py-8 bg-white">
       {/* Section Title */}
       <div className="text-center mb-8">
@@ -196,7 +196,7 @@ export default function LandingPage() {
             <p className="text-black text-center mt-5 mb-5">We specialize in creating custom homes that transform your vision into reality. Located in the heart of Sarasota, New Force Construction brings unparalleled expertise and passion to every residential construction project we undertake.</p>
             <Images images={atNewForce} />
         </div>
-
+    <CallToAction />     
     <ContactBanner/>
     <TestimonialsSection testimonials={testimonialsData}/>
     <Footer/>

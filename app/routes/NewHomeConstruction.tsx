@@ -6,7 +6,7 @@ import ContactBanner from "~/components/ContactBanner";
 import OurComitment from "~/components/PreconstructionSteps";
 import ServiceCard from "~/components/ServiceCard";
 import Footer from "~/components/Footer"
-
+import CallToAction from "~/components/CallToAction";
 
 export default function NewForceConstruction(   ) {
     const atNewForce = ["/armazon.jpeg","/e4b21e09c0a7f76b1b44b14a341b3c64.jpeg","/9464febc5ffac581cf4a2907d73971cd.jpeg","/392fd3329d65a48c6e65420fdd07050e.jpeg","/05f962a803125be16000fb562f1a4da1.jpeg","/f99a7be318157b387542facf57ddd616.jpeg"]
@@ -27,6 +27,7 @@ export default function NewForceConstruction(   ) {
             <h2 className="text-norange text-center font-bold text-3xl md:text-5xl">Why Choose New Force Construction?</h2>
             <p className="text-black text-center mt-5 mb-5">Our team of local architects, designers, and engineers works meticulously to ensure every detail of your dream home is executed to perfection. Building a custom home is more than a project—it's about creating a lifetime of memories in beautiful Sarasota.</p>
         </div>
+        <CallToAction />
         <div className="m-5 md:m-20">
             <h2 className="mb-5 text-norange text-center font-bold text-3xl md:text-5xl">Our Comprehensive Services</h2>
             <p className="mt-5 p-5 text-xl text-center rounded-xl  text-black border-4"><b>Fully Customized Design-Build Process:</b> From initial concept to final construction, we provide a complete turn-key service tailored to your unique lifestyle and preferences.</p>
@@ -82,6 +83,7 @@ export default function NewForceConstruction(   ) {
             <p className="text-black text-center mt-5 mb-5">Sarasota, Bradenton, Venice, Siesta Key, St. Petersburg Surrounding Southwest Florida Communities</p>
             <img className="opacity-25 m-auto" src="/Mapa.jpg" alt="" />
         </div>
+        <CallToAction />
         <Footer/>
     </div>
   );

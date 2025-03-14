@@ -7,7 +7,7 @@ const LeadCapture: React.FC = () => {
         <h2 className='text-xl font-semibold text-gray-800 mb-4 text-center'>
           Request Your Free Estimate Now!
         </h2>
-        <form className='flex flex-col gap-4'>
+        <form className='flex flex-col gap-4 text-gray-800'>
           <input
             type='text'
             placeholder='Full Name'

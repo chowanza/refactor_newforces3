@@ -5,6 +5,7 @@ import ContactBanner from "~/components/ContactBanner";
 import Commitment from "~/components/PreconstructionSteps"
 import ServiceCard from "~/components/ServiceCard";
 import Footer from "~/components/Footer";
+import CallToAction from "~/components/CallToAction";
 
 export default function KitchenAndBath(){
     return(
@@ -39,6 +40,7 @@ export default function KitchenAndBath(){
                 <Carousel/>
                 <p className="mr-auto ml-auto max-w-5xl text-black text-xl text-center p-10">Imagine your dream bathroom. A serene space where you can unwind after a long day or invigorate your mornings. Whether you're dreaming of a sleek, modern shower renovation or a classic, timeless bathroom remodel in Sarasota, New Force Construction is here to bring your vision to life.</p>
             </div>
+            <CallToAction />
             <ContactBanner/>
             <div className="m-5 md:ml-20 md:mr-20">
                 <h2 className="text-norange text-center font-bold text-5xl md:text-7xl">Our Commitment to You</h2>
@@ -85,6 +87,7 @@ export default function KitchenAndBath(){
             <p className="text-black text-center mt-5 mb-5">Sarasota, Bradenton, Venice, Siesta Key, St. Petersburg Surrounding Southwest Florida Communities</p>
             <img className="opacity-25 m-auto" src="/Mapa.jpg" alt="" />
         </div>
+        <CallToAction />
         <Footer/>
         </div>
     );
