@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import { LuHouse, LuBuilding, LuPhone } from 'react-icons/lu';
 
 interface CardProps {
-  icon: string;
+  Icon: React.FC;
   title: string;
   description: string;
   buttonText: string;
@@ -10,7 +11,7 @@ interface CardProps {
 }
 
 const CardCTA: React.FC<CardProps> = ({
-  icon,
+  Icon,
   title,
   description,
   buttonText,
@@ -19,8 +20,8 @@ const CardCTA: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`w-1/3 min-h-64 p-4 bg-white shadow-[0px_0px_50px_1px_#00000024] flex flex-col justify-evenly rounded-lg cursor-pointer ${
-        isActive ? 'border-[2px] border-[#f97316]' : 'border-[1px]'
+      className={`w-1/3 min-h-64 p-4 bg-white shadow-[0px_0px_50px_3px_#00000024] flex flex-col justify-evenly rounded-lg cursor-pointer hover:shadow-[0px_0px_50px_3px_#f9731644] hover:outline-[2px] hover:outline-[#f9731624] ${
+        isActive ? 'border-[2px] border-[#f97316]' : 'border-[2px]'
       }`}
       onClick={onSelect}
     >
@@ -29,7 +30,7 @@ const CardCTA: React.FC<CardProps> = ({
           isActive ? 'bg-[#f97316] text-white' : 'text-[#1b355b]'
         }`}
       >
-        {icon}
+        <Icon />
       </div>
       <h2 className='self-center text-xl text-[#1b355b]'>{title}</h2>
       <p className='self-center text-center text-sm text-[#3b557b]'>
@@ -61,7 +62,7 @@ const CallToAction: React.FC = () => {
       </div>
       <div className='flex flex-row items-center justify-evenly w-full px-10 gap-10'>
         <CardCTA
-          icon='1'
+          Icon={LuHouse}
           title='Free Quote'
           description='Get an accurate estimate for your dream home project without any obligation.'
           buttonText='Get a Free Quote Today!'
@@ -69,7 +70,7 @@ const CallToAction: React.FC = () => {
           onSelect={() => setActiveIndex(0)}
         />
         <CardCTA
-          icon='2'
+          Icon={LuBuilding}
           title='Project Estimate'
           description='Detailed breakdown of costs and timeline for your custom home construction.'
           buttonText='Request Your Free Estimate Now!'
@@ -77,7 +78,7 @@ const CallToAction: React.FC = () => {
           onSelect={() => setActiveIndex(1)}
         />
         <CardCTA
-          icon='3'
+          Icon={LuPhone}
           title='Start Building'
           description='Ready to begin? Our expert team is standing by to discuss your vision.'
           buttonText='Start Your Project – Contact Us!'
