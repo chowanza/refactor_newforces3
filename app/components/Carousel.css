@@ -1,0 +1,57 @@
+/* Custom Swiper Navigation Arrows */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+/* Remove Swiper default arrow content */
+.swiper-button-prev-custom::after,
+.swiper-button-next-custom::after {
+    content: "";
+    display: none;
+}
+
+/* Left Arrow (Orange SVG) */
+.swiper-button-prev-custom {
+    left: 100px;
+    background: url("/left-arrow.svg") no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+/* Right Arrow (Orange SVG) */
+.swiper-button-next-custom {
+    right: 100px;
+    background: url("/right-arrow.svg") no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hover Effect */
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+    filter: brightness(1.2);
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 768px) {
+
+    .swiper-button-prev-custom,
+    .swiper-button-next-custom {
+        display: none;
+    }
+}
