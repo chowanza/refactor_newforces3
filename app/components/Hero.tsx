@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({
         <div>
           <h2 className='font-bold text-2xl'>Get a Free Quote Today!</h2>
           <div className='flex items-center justify-center m-4'>
-            <button className='px-5 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl'>
+            <button className='px-10 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl'>
               Start Your Project!
             </button>
           </div>
