@@ -11,8 +11,8 @@ import CallToAction from "../components/CallToAction";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New Force" },
-    { name: "description", content: "Commercial Construction Services" },
+    { title: "New Force Construction | Commercial Construction in Sarasota, FL" },
+    { name: "description", content: "Looking for expert commercial construction in Sarasota, FL? New Force Construction offers office, retail & industrial building solutions. Get a free quote!" },
   ];
 }
 
@@ -25,7 +25,7 @@ export default function CommercialConstruction() {
     <div>
     <Header currentPage="commercialconstruction"/>
     <Hero 
-      title="New Force Construction LLC" 
+      title="Top-Rated Commercial Construction in Sarasota, FL – Get a Free Quote!" 
       subtitle="Exceptional Residential Construction & Remodeling" 
       description="Building Excellence for Your Business Design, Build, Renovate – Your Vision, Our Expertise" 
       buttonText="About" 

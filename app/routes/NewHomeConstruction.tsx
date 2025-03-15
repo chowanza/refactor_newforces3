@@ -8,13 +8,21 @@ import ServiceCard from "~/components/ServiceCard";
 import Footer from "~/components/Footer"
 import CallToAction from "~/components/CallToAction";
 
+
+export function meta({}: Route.MetaArgs) {
+    return [
+      { title: "New Home Construction | Reliable Home Builder in Florida" },
+      { name: "description", content: "Need a reliable home builder in Florida? We handle everything from permits to completion. Contact us today!" },
+    ];
+}
+
 export default function NewForceConstruction(   ) {
     const atNewForce = ["/armazon.webp","/e4b21e09c0a7f76b1b44b14a341b3c64.webp","/9464febc5ffac581cf4a2907d73971cd.webp","/392fd3329d65a48c6e65420fdd07050e.webp","/05f962a803125be16000fb562f1a4da1.webp","/f99a7be318157b387542facf57ddd616.webp"]
     return (
     <div>
         <Header currentPage="newhomeconstruction"/>
         <Hero backgroundImage="/hero-saratosa.webp"
-        title="New Force Construction"
+        title="Build Your Dream Home in Sarasota – Free Consultation!"
         buttonText="About Us"
         description=""
         onButtonClick={() => {}}

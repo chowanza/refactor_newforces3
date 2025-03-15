@@ -1,3 +1,4 @@
+import type { Route } from "./+types/Kitchen & Bath";
 import { motion } from 'framer-motion';
 import Header from '~/components/Header';
 import Hero from '~/components/Hero';
@@ -8,6 +9,15 @@ import ServiceCard from '~/components/ServiceCard';
 import Footer from '~/components/Footer';
 import CallToAction from '~/components/CallToAction';
 
+
+export function meta({}: Route.MetaArgs) {
+  return [
+    { title: "Kitchen & Bath Renovations | High-End Remodels in Sarasota, FL" },
+    { name: "description", content: "Upgrade your home with professional kitchen & bath renovations in Sarasota, FL. High-end remodels at competitive prices!" },
+  ];
+}
+
+
 export default function KitchenAndBath() {
   return (
     <div>
@@ -17,7 +27,7 @@ export default function KitchenAndBath() {
         buttonText='About Us'
         description='Transform Your Sarasota Home with Exquisite Kitchen & Bath Renovations'
         subtitle='Remodeling Specialists in Sarasota, Florida'
-        title='New Force Construction Kitchen & Bath'
+        title='Transform Your Kitchen & Bath – Sarasota’s #1 Renovation Experts'
         onButtonClick={() => {}}
       />
       <motion.div

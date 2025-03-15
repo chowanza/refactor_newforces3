@@ -13,8 +13,8 @@ import CallToAction from "../components/CallToAction";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New Force" },
-    { name: "description", content: "New Force Construction" },
+    { title: "Residential Construction | Build Your Dream Home in Sarasota, FL" },
+    { name: "description", content: "Build your dream home with Sarasota’s best residential construction experts. Custom homes, expansions & renovations. Free estimate!" },
   ];
 }
 
@@ -51,7 +51,7 @@ export default function ResidentialConstruction() {
     <>
     <Header currentPage="residential"/>
     <Hero
-        title="Transform Your Sarasota Home"
+        title="Sarasota’s Most Trusted Residential Construction Experts"
         subtitle="Exceptional Residential Construction & Remodeling"
         description="Experience Stress-Free Projects with New Force Construction"
         buttonText="About Us"
