@@ -17,7 +17,7 @@ export default function Header({ currentPage }: HeaderProps) {
       <Navbar className={`custom-navbar h-fixed fixed w-full z-50`}>
         <Navbar.Brand>
           <img
-            src="/logo-newforce.png"
+            src="/logo-newforce.webp"
             alt="Logo"
             className="mr-2 object-contain logo"
             style={{ width: "120px", height: "60px" }}

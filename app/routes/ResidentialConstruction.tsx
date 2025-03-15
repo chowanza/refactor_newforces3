@@ -28,7 +28,7 @@ const handleHeroButtonClick = () => {
       title: "Roofing Client",
       testimonial:
         "El personal era estupendo. Los recepcionistas fueron muy serviciales y respondieron a todas nuestras preguntas. La habitación estaba limpia y era luminosa, y el servicio de habitaciones siempre fue puntual. Volveremos. Muchas gracias.",
-      imageUrl: "/worker.png",
+      imageUrl: "/worker.webp",
     },
     {
       name: "Juan Pérez",
@@ -56,20 +56,20 @@ export default function ResidentialConstruction() {
         description="Experience Stress-Free Projects with New Force Construction"
         buttonText="About Us"
         onButtonClick={handleHeroButtonClick}
-        backgroundImage="/hero-saratosa.png"
+        backgroundImage="/hero-saratosa.webp"
       />
       <section className="px-4 py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <InfoCard 
-            iconSrc="/project-logo.png" 
+            iconSrc="/project-logo.webp" 
             title={<span>Tired of dealing with <strong>unreliable contractors</strong>?</span>} 
           />
           <InfoCard 
-            iconSrc="/project-logo.png"  
+            iconSrc="/project-logo.webp"  
             title={<span>Frustrated by project <strong>delays and budget overruns</strong>?</span>} 
           />
           <InfoCard 
-            iconSrc="/project-logo.png"  
+            iconSrc="/project-logo.webp"  
             title={<span>Dreaming of a stunning new <strong>kitchen or bathroom</strong>?</span>}
           />
         </div>
@@ -125,22 +125,22 @@ export default function ResidentialConstruction() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           <ServiceCard
-            iconSrc="/project-logo.png"
+            iconSrc="/project-logo.webp"
             title="New Home Construction"
             description="Build your dream home with expert guidance and meticulous attention to detail."
           />
           <ServiceCard
-            iconSrc="/project-logo.png"
+            iconSrc="/project-logo.webp"
             title="Kitchen & Bathroom Remodeling"
             description="Transform your kitchen into a culinary masterpiece or create a luxurious spa-like bathroom."
           />
           <ServiceCard
-            iconSrc="/project-logo.png"
+            iconSrc="/project-logo.webp"
             title="Home Renovations"
             description="From minor upgrades to full-scale renovations, we can help you modernize and enhance your living space."
           />
           <ServiceCard
-            iconSrc="/project-logo.png"
+            iconSrc="/project-logo.webp"
             title="Roofing Services"
             description="Protect your home with high-quality roofing installations and expert repairs."
           />

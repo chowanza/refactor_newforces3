@@ -9,11 +9,11 @@ import Footer from "~/components/Footer"
 import CallToAction from "~/components/CallToAction";
 
 export default function NewForceConstruction(   ) {
-    const atNewForce = ["/armazon.jpeg","/e4b21e09c0a7f76b1b44b14a341b3c64.jpeg","/9464febc5ffac581cf4a2907d73971cd.jpeg","/392fd3329d65a48c6e65420fdd07050e.jpeg","/05f962a803125be16000fb562f1a4da1.jpeg","/f99a7be318157b387542facf57ddd616.jpeg"]
+    const atNewForce = ["/armazon.webp","/e4b21e09c0a7f76b1b44b14a341b3c64.webp","/9464febc5ffac581cf4a2907d73971cd.webp","/392fd3329d65a48c6e65420fdd07050e.webp","/05f962a803125be16000fb562f1a4da1.webp","/f99a7be318157b387542facf57ddd616.webp"]
     return (
     <div>
         <Header currentPage="newhomeconstruction"/>
-        <Hero backgroundImage="/hero-saratosa.png"
+        <Hero backgroundImage="/hero-saratosa.webp"
         title="New Force Construction"
         buttonText="About Us"
         description=""
@@ -46,10 +46,10 @@ export default function NewForceConstruction(   ) {
         <div className="m-5 md:m-20">
             <h2 className="mb-5 text-norange text-center font-bold text-3xl md:text-5xl">Our Commitment to You</h2>
             <div className="grid md:grid-cols-2 gap-2">
-                <OurComitment descripcion="Personalized design consultations." icon="/Carretilla.svg" number="01" imageSrc="Planos.png"/>
-                <OurComitment descripcion="High-end, locally-sourced materials." icon="/Carretilla.svg" number="02" imageSrc="Concrete.jpg"/>
-                <OurComitment descripcion="Comprehensive project management." icon="/Carretilla.svg" number="03" imageSrc="Planos.png"/>
-                <OurComitment descripcion="Exceptional customer service." icon="/Carretilla.svg" number="04" imageSrc="Flooring.jpg"/>
+                <OurComitment descripcion="Personalized design consultations." icon="/Carretilla.svg" number="01" imageSrc="Planos.webp"/>
+                <OurComitment descripcion="High-end, locally-sourced materials." icon="/Carretilla.svg" number="02" imageSrc="Concrete.webp"/>
+                <OurComitment descripcion="Comprehensive project management." icon="/Carretilla.svg" number="03" imageSrc="Planos.webp"/>
+                <OurComitment descripcion="Exceptional customer service." icon="/Carretilla.svg" number="04" imageSrc="Flooring.webp"/>
             </div>
         </div>
         <div className="m-5 md:m-20">
@@ -81,7 +81,7 @@ export default function NewForceConstruction(   ) {
         <div className="m-5 md:m-20">
             <h2 className="mb-5 text-norange text-center font-bold text-3xl md:text-5xl">Service Areas</h2>
             <p className="text-black text-center mt-5 mb-5">Sarasota, Bradenton, Venice, Siesta Key, St. Petersburg Surrounding Southwest Florida Communities</p>
-            <img className="opacity-25 m-auto" src="/Mapa.jpg" alt="" />
+            <img className="opacity-25 m-auto" src="/Mapa.webp" alt="" />
         </div>
         <CallToAction />
         <Footer/>

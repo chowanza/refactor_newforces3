@@ -6,7 +6,7 @@ const ContactBanner: React.FC = () => {
       {/* Left Section: Image and Text */}
       <div className="flex items-center gap-4">
         <img
-          src="/worker.png" // Replace with the actual image path
+          src="/worker.webp" // Replace with the actual image path
           alt="Construction worker"
           className="w-32 h-auto object-contain hidden md:block"
         />

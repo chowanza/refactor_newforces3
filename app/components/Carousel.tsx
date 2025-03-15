@@ -9,19 +9,19 @@ import { Navigation } from "swiper/modules";
 const Carousel: React.FC = () => {
   const slides = [
     {
-      image: "/contact-form.png", // Replace with your image paths
+      image: "/contact-form.webp", // Replace with your image paths
       title: "Unmatched Quality:",
       description:
         "We utilize only the finest materials and employ skilled craftsmen to ensure exceptional results.",
     },
     {
-      image: "/contact-form.png", // Replace with your image paths
+      image: "/contact-form.webp", // Replace with your image paths
       title: "Trusted Expertise:",
       description:
         "Our team has years of experience in delivering top-notch construction and renovation projects.",
     },
     {
-      image: "/contact-form.png", // Replace with your image paths
+      image: "/contact-form.webp", // Replace with your image paths
       title: "Customer Satisfaction:",
       description:
         "We work closely with our clients to ensure their vision becomes a reality.",

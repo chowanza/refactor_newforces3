@@ -18,8 +18,8 @@ export function meta({}: Route.MetaArgs) {
 
 
 export default function CommercialConstruction() {
-  const atNewForce = ["/armazon.jpeg","/e4b21e09c0a7f76b1b44b14a341b3c64.jpeg","/9464febc5ffac581cf4a2907d73971cd.jpeg","/392fd3329d65a48c6e65420fdd07050e.jpeg","/05f962a803125be16000fb562f1a4da1.jpeg","/f99a7be318157b387542facf57ddd616.jpeg"]
-  const tenant = ["/cd24d2b9f4c51670ca516e19ea41988f.jpeg","/armazon.jpeg","/e4b21e09c0a7f76b1b44b14a341b3c64.jpeg","/9464febc5ffac581cf4a2907d73971cd.jpeg","/392fd3329d65a48c6e65420fdd07050e.jpeg","/05f962a803125be16000fb562f1a4da1.jpeg"]
+  const atNewForce = ["/armazon.webp","/e4b21e09c0a7f76b1b44b14a341b3c64.webp","/9464febc5ffac581cf4a2907d73971cd.webp","/392fd3329d65a48c6e65420fdd07050e.webp","/05f962a803125be16000fb562f1a4da1.webp","/f99a7be318157b387542facf57ddd616.webp"]
+  const tenant = ["/cd24d2b9f4c51670ca516e19ea41988f.webp","/armazon.webp","/e4b21e09c0a7f76b1b44b14a341b3c64.webp","/9464febc5ffac581cf4a2907d73971cd.webp","/392fd3329d65a48c6e65420fdd07050e.webp","/05f962a803125be16000fb562f1a4da1.webp"]
   
   return (
     <div>
@@ -30,7 +30,7 @@ export default function CommercialConstruction() {
       description="Building Excellence for Your Business Design, Build, Renovate – Your Vision, Our Expertise" 
       buttonText="About" 
       onButtonClick={()=>{}} 
-      backgroundImage="/hero-saratosa.png"></Hero>
+      backgroundImage="/hero-saratosa.webp"></Hero>
       <div>
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl mb-20">Your Trusted Partner for Commercial Construction</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">
@@ -55,10 +55,10 @@ export default function CommercialConstruction() {
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl">Pre-Construction</h2>
         <p className="mr-auto ml-auto max-w-5xl text-black text-xl text-center">We believe successful projects start with meticulous planning. Our experienced team works closely with you to evaluate your goals, develop cost-effective solutions, and create a roadmap for success.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center">
-          <Card descripcion="In-depth project analysis and planning" number="01" icon="/Carretilla.svg" imageSrc="/pala.jpeg" />
-          <Card descripcion="Budget development and cost estimation" number="02" icon="/Carretilla.svg" imageSrc="/inspections.jpeg" />
-          <Card descripcion="Timelines to ensure on-time delivery" number="03" icon="/Carretilla.svg" imageSrc="/pickle.jpeg" />
-          <Card descripcion="Risk assessment and mitigation strategies" number="04" icon="/Carretilla.svg" imageSrc="/72.jpeg" />
+          <Card descripcion="In-depth project analysis and planning" number="01" icon="/Carretilla.svg" imageSrc="/pala.webp" />
+          <Card descripcion="Budget development and cost estimation" number="02" icon="/Carretilla.svg" imageSrc="/inspections.webp" />
+          <Card descripcion="Timelines to ensure on-time delivery" number="03" icon="/Carretilla.svg" imageSrc="/pickle.webp" />
+          <Card descripcion="Risk assessment and mitigation strategies" number="04" icon="/Carretilla.svg" imageSrc="/72.webp" />
         </div>
       </div>
       <CallToAction />

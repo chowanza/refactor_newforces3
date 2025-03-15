@@ -12,7 +12,7 @@ export default function KitchenAndBath(){
         <div>
             <Header currentPage="kitchen"/>
             <Hero 
-            backgroundImage="/hero-saratosa.png"
+            backgroundImage="/hero-saratosa.webp"
             buttonText="About Us"
             description="Transform Your Sarasota Home with Exquisite Kitchen & Bath Renovations"
             subtitle="Remodeling Specialists in Sarasota, Florida"
@@ -47,15 +47,15 @@ export default function KitchenAndBath(){
                 <div className="flex flex-wrap h-[175vh] md:h-[175vh] md:mt-[-70px]">
                     <Commitment descripcion="<b>Detailed Project Planning:</b> We work closely with you to understand your vision and create a detailed plan that meets your budget and timeline."
                     icon="/Carretilla.svg"
-                    imageSrc="Planos.png"
+                    imageSrc="Planos.webp"
                     number="01"/>
                     <Commitment descripcion="<b>Detailed Project Planning:</b> We work closely with you to understand your vision and create a detailed plan that meets your budget and timeline."
                     icon="/Carretilla.svg"
-                    imageSrc="Planos.png"
+                    imageSrc="Planos.webp"
                     number="01"/>
                     <Commitment descripcion="<b>Detailed Project Planning:</b> We work closely with you to understand your vision and create a detailed plan that meets your budget and timeline."
                     icon="/Carretilla.svg"
-                    imageSrc="Planos.png"
+                    imageSrc="Planos.webp"
                     number="01"/>
                 </div>
 
@@ -85,7 +85,7 @@ export default function KitchenAndBath(){
             <div className="m-5 md:m-20">
             <h2 className="mb-5 text-norange text-center font-bold text-3xl md:text-5xl">Service Areas</h2>
             <p className="text-black text-center mt-5 mb-5">Sarasota, Bradenton, Venice, Siesta Key, St. Petersburg Surrounding Southwest Florida Communities</p>
-            <img className="opacity-25 m-auto" src="/Mapa.jpg" alt="" />
+            <img className="opacity-25 m-auto" src="/Mapa.webp" alt="" />
         </div>
         <CallToAction />
         <Footer/>

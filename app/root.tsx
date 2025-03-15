@@ -26,7 +26,7 @@ export const links: Route.LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap",
   },
   { rel: "stylesheet", href: stylesheet },
-  { rel: "icon", href: "/logo-newforce.png" }, 
+  { rel: "icon", href: "/logo-newforce.webp" }, 
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

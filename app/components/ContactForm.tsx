@@ -132,7 +132,7 @@ const ContactForm: React.FC = () => {
         <button type="submit" className="submit-button rounded-lg">Send</button>
       </div>
     </form>
-    <img src="/contact-form.png" alt="Contact" />
+    <img src="/contact-form.webp" alt="Contact" />
     </section>
   );
 };
