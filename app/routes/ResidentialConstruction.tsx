@@ -148,6 +148,7 @@ export default function ResidentialConstruction() {
       </section>
       <ContactForm/>
       <TestimonialsSection testimonials={testimonialsData}/>
+      <CallToAction />
       <Footer/>
       </>
   );
