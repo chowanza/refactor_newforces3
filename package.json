@@ -16,6 +16,7 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.21.1",
     "flowbite-react": "^0.10.2",
+    "framer-motion": "^12.5.0",
     "isbot": "^5.1.17",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
