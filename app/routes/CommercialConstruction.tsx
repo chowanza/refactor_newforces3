@@ -30,7 +30,7 @@ export default function CommercialConstruction() {
       description="Building Excellence for Your Business Design, Build, Renovate – Your Vision, Our Expertise" 
       buttonText="About" 
       onButtonClick={()=>{}} 
-      backgroundImage="/hero-saratosa.webp"></Hero>
+      backgroundImage="/hero-saratosa.webp" />
       <div>
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl mb-20">Your Trusted Partner for Commercial Construction</h2>
         <div className="grid grid-cols-1 md:grid-cols-2">

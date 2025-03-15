@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section
-      className='relative flex items-center md:justify-center justify-evenly min-h-screen bg-cover bg-center md:flex-row flex-col'
+      className='relative flex items-center md:justify-center justify-evenly min-h-screen bg-cover bg-center md:flex-row flex-col gap-10 pt-10 mb-16'
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div
