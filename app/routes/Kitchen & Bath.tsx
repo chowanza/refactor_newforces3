@@ -173,6 +173,29 @@ export default function KitchenAndBath() {
           />
         </div>
       </motion.div>
+      <motion.div
+        className='m-5 md:ml-20 md:mr-20'
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <h2 className='text-norange text-center font-bold text-3xl md:text-5xl'>
+          Frequently Asked Questions
+        </h2>
+        <p className='mt-5 p-5 text-xl text-center rounded-xl text-black border-4'>
+          <b>How long does a kitchen renovation take?</b> <br />
+          The timeline varies based on the complexity of the project, but most kitchen remodels take between 6-12 weeks from planning to completion.
+        </p>
+        <p className='mt-5 p-5 text-xl text-center rounded-xl text-black border-4'>
+          <b>What’s the cost of a bathroom remodel in Florida?</b> <br />
+          The cost depends on the size of the project and materials used. On average, bathroom remodels in Florida range from $7,000 to $25,000.
+        </p>
+        <p className='mt-5 p-5 text-xl text-center rounded-xl text-black border-4'>
+          <b>Do I need a permit for a kitchen renovation?</b> <br />
+          Yes, most kitchen remodels require permits, especially if structural, electrical, or plumbing changes are involved. We handle all necessary permits for your project.
+        </p>
+      </motion.div>
       <CallToAction />
       <Footer />
     </div>
