@@ -11,16 +11,18 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, Icon, description, list }) => {
   return (
-    <div className='px-8 md:py-6 py-6 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg flex flex-col justify-center items-center text-gray-600 h-96 w-[24rem]'>
-      <div className='flex items-start justify-start gap-4'>
-        <h3 className='text-[#f97316] text-start text-xl font-semibold'>
-          {title}
-        </h3>
-        <div className='grid place-items-center w-12 h-12 rounded-full bg bg-slate-200 shrink-0 text-lg'>
-          <Icon />
+    <div className='px-8 md:py-6 py-6 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg flex flex-col items-center text-gray-600 h-[25rem] w-[24rem]'>
+      <div className='flex flex-col items-start justify-center gap-4'>
+        <div className='flex items-start justify-start gap-4'>
+          <h3 className='text-[#f97316] text-start text-xl font-semibold'>
+            {title}
+          </h3>
+          <div className='grid place-items-center w-12 h-12 rounded-full bg bg-slate-200 shrink-0 text-lg'>
+            <Icon />
+          </div>
         </div>
+        <p className='text-start mt-2 text-gray-500 text-sm'>{description}</p>
       </div>
-      <p className='text-start mt-2 text-gray-500 text-sm'>{description}</p>
       <ul className='mt-4 flex justify-around items-start flex-col text-sm text-gray-600'>
         {list.map((item, index) => (
           <li
