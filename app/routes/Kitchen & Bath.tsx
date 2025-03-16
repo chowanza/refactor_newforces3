@@ -8,6 +8,7 @@ import Commitment from '~/components/PreconstructionSteps';
 import ServiceCard from '~/components/ServiceCard';
 import Footer from '~/components/Footer';
 import CallToAction from '~/components/CallToAction';
+import Services from '../components/Services';
 
 
 export function meta({}: Route.MetaArgs) {
@@ -74,6 +75,7 @@ export default function KitchenAndBath() {
           reputable suppliers to ensure lasting beauty and durability.
         </p>
       </motion.div>
+      <Services serviceType={3} />
       <motion.div
         className='m-5 md:ml-20 md:mr-20'
         initial={{ opacity: 0 }}

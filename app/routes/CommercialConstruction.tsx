@@ -8,6 +8,7 @@ import Carousel from "~/components/Carousel";
 import Selector from "~/components/ImageSelector";
 import Footer from "~/components/Footer";
 import CallToAction from "../components/CallToAction";
+import Services from "~/components/Services";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -40,6 +41,7 @@ export default function CommercialConstruction() {
           <InfoCard title="Locally Owned and Operated in Sarasota, Florida" iconSrc="/location.svg"/>
         </div>
       </div>
+      <Services serviceType={1} />
       <div className="mr-auto ml-auto max-w-7xl grid  md:grid-cols-2 grid-cols-none border-4 m-10 rounded-3xl justify-center items-center ">
         <Selector images={atNewForce}/>
         <div className="p-6">

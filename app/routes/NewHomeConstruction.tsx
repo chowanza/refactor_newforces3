@@ -7,7 +7,7 @@ import OurComitment from "~/components/PreconstructionSteps";
 import ServiceCard from "~/components/ServiceCard";
 import Footer from "~/components/Footer"
 import CallToAction from "~/components/CallToAction";
-
+import Services from '../components/Services';
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -36,6 +36,7 @@ export default function NewForceConstruction(   ) {
             <p className="text-black text-center mt-5 mb-5">Our team of local architects, designers, and engineers works meticulously to ensure every detail of your dream home is executed to perfection. Building a custom home is more than a project—it's about creating a lifetime of memories in beautiful Sarasota.</p>
         </div>
         <CallToAction />
+        <Services serviceType={4} />
         <div className="m-5 md:m-20">
             <h2 className="mb-5 text-norange text-center font-bold text-3xl md:text-5xl">Our Comprehensive Services</h2>
             <p className="mt-5 p-5 text-xl text-center rounded-xl  text-black border-4"><b>Fully Customized Design-Build Process:</b> From initial concept to final construction, we provide a complete turn-key service tailored to your unique lifestyle and preferences.</p>

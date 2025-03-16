@@ -2,7 +2,7 @@ import React from 'react';
 
 const LeadCapture: React.FC = () => {
   return (
-    <div className='md:w-[40vw] w-full md:h-full h-[50vh] z-10 flex justify-center items-center'>
+    <div className='md:w-[40vw] w-full md:h-full h-[50vh] z-10 flex justify-center items-center md:mt-0 mt-10'>
       <div className='w-4/5 px-6 md:py-4 py-3 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg'>
         <h2 className='text-xl font-semibold text-gray-800 mb-4 text-center'>
           Request Your Free Estimate Now!
