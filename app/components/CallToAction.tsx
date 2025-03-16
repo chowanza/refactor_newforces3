@@ -36,7 +36,7 @@ const CardCTA: React.FC<CardProps> = ({
       <p className='self-center text-center text-sm text-[#3b557b]'>
         {description}
       </p>
-      <button className='bg-[#12233d] py-2 px-4 flex justify-between text-base rounded-lg group hover:bg-[#22334d]'>
+      <button className='bg-[#12233d] text-white py-2 px-4 flex justify-between text-base rounded-lg group hover:bg-[#22334d]'>
         {buttonText}{' '}
         <span className='group-hover:translate-x-2 transition-all'>&gt;</span>
       </button>

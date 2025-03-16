@@ -33,7 +33,7 @@ const Hero: React.FC<HeroProps> = ({
         }}
       ></div>
       <div className='md:w-[60vw] w-full relative z-10 text-center px-6 md:px-12 lg:px-20 flex flex-col items-center justify-center h-full'>
-        {home && <p className='text-3xl'>We are</p>}
+        {home && <p className='text-3xl text-white'>We are</p>}
         <h1 className='text-5xl text-norange md:text-4xl lg:text-5xl font-bold  mb-4'>
           {title}
         </h1>
@@ -48,9 +48,11 @@ const Hero: React.FC<HeroProps> = ({
           </p>
         )}
         <div>
-          <h2 className='font-bold text-2xl'>Get a Free Quote Today!</h2>
+          <h2 className='font-bold text-2xl text-white'>
+            Get a Free Quote Today!
+          </h2>
           <div className='flex items-center justify-center m-4'>
-            <button className='px-10 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl'>
+            <button className='px-10 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl text-white'>
               Start Your Project!
             </button>
           </div>

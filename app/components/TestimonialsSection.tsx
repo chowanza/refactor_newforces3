@@ -63,9 +63,9 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
 
       <div className='max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {testimonials.map((testimonial, index) => (
-          <Card
+          <div
             key={index}
-            className='w-full bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300'
+            className='w-full flex flex-col justify-between items-center bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition duration-300'
           >
             <p className='text-sm text-gray-700 text-justify'>
               "{testimonial.testimonial}"
@@ -83,7 +83,7 @@ const TestimonialsSection: React.FC<TestimonialsSectionProps> = ({
                 <p className='text-sm text-gray-500'>{testimonial.title}</p>
               </div>
             </div>
-          </Card>
+          </div>
         ))}
       </div>
     </section>

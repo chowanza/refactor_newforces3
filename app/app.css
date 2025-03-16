@@ -4,9 +4,81 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+/* Custom scroll animation for progress tracker */
+.scroll-progress-container {
+  position: relative;
+}
+
+.timeline-container {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-dot {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.timeline-dot.active {
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
+}
+
+.timeline-step {
+  transition: all 0.4s ease;
+}
+
+.timeline-step.active .timeline-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-step .timeline-content {
+  opacity: 0.5;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 0;
+  transition: height 0.3s ease;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
   }
+}
+
+/* Animations for scroll-based reveal */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fancy backdrop blur for cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
