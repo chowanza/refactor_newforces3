@@ -9,6 +9,8 @@ import Images from "~/components/ImageSelector";
 import ContactBanner from "~/components/ContactBanner";
 import TestimonialsSection from "~/components/TestimonialsSection";
 import Footer from "~/components/Footer";
+import TrustSignals from "~/components/TrustSignals";
+
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -199,6 +201,7 @@ export default function LandingPage() {
     <CallToAction />     
     <ContactBanner/>
     <TestimonialsSection testimonials={testimonialsData}/>
+    <TrustSignals/>
     <Footer/>
     </>
   );
