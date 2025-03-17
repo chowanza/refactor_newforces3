@@ -2,13 +2,15 @@ import React, { useEffect, useRef, useState } from 'react';
 import { LuCheck } from 'react-icons/lu';
 import './ConstructionPT.css';
 
-const ConstructionProgressTracker: React.FC = () => {
+const ConstructionProgressTracker: React.FC<{ option: number }> = ({
+  option = 1,
+}) => {
   const [activeStep, setActiveStep] = useState(0);
   const [scrollProgress, setScrollProgress] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const timelineRef = useRef<HTMLDivElement>(null);
 
-  const steps = [
+  const stepsHome = [
     {
       number: 1,
       title: 'Consultation & Planning',
@@ -34,6 +36,36 @@ const ConstructionProgressTracker: React.FC = () => {
         'Finalizing construction details and conducting a thorough walkthrough before handover.',
     },
   ];
+
+  const stepsResidential = [
+    {
+      number: 1,
+      title: 'Planning & Consultation',
+      description:
+        'Assessing your needs, setting project goals, and developing a strategic plan for your residential construction.',
+    },
+    {
+      number: 2,
+      title: 'Permits & Approvals',
+      description:
+        'Handling zoning requirements, acquiring necessary permits, and ensuring compliance with local building regulations.',
+    },
+    {
+      number: 3,
+      title: 'Construction Phase',
+      description:
+        'Executing the construction process, from site preparation to framing, roofing, and interior installations.',
+    },
+    {
+      number: 4,
+      title: 'Completion & Handover',
+      description:
+        'Final inspections, finishing touches, and a detailed walkthrough to ensure everything meets expectations before moving in.',
+    },
+  ];
+
+  const steps =
+    option === 1 ? stepsHome : option === 2 ? stepsResidential : stepsHome;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -117,8 +149,12 @@ const ConstructionProgressTracker: React.FC = () => {
             Your Construction Journey
           </h2>
           <p className='text-lg text-gray-600 max-w-2xl mx-auto'>
-            We keep you informed at every stage of your new home construction.
-            Follow your project's progress from conception to completion.
+            {option === 1
+              ? `We keep you informed at every stage of your new home construction.
+              Follow your project's progress from conception to completion.`
+              : option === 2
+              ? `Understand the key steps in the residential construction process. From initial planning to final completion, here’s what to expect when building your new home.`
+              : `We keep you informed at every stage of your new home construction.`}
           </p>
         </div>
 

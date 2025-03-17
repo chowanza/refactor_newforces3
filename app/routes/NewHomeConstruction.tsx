@@ -64,7 +64,7 @@ export default function NewForceConstruction() {
       </div>
       <CallToAction />
       <div className='min-h-screen bg-white'>
-        <ConstructionProgressTracker />
+        <ConstructionProgressTracker option={1} />
       </div>
       <Services serviceType={4} />
       <div className='m-5 md:m-20'>

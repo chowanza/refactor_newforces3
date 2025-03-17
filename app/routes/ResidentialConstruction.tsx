@@ -11,6 +11,7 @@ import Footer from "~/components/Footer";
 import TestimonialsSection from "~/components/TestimonialsSection";
 import CallToAction from "../components/CallToAction";
 import Services from "../components/Services";
+import ConstructionProgressTracker from "~/components/ConstructionProgressTracker";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -76,6 +77,7 @@ export default function ResidentialConstruction() {
         </div>
       </section>
       <Services serviceType={2} />
+      <ConstructionProgressTracker option={2} />
       <section className="px-6 py-16 bg-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-norange mb-4">
           You're not alone
