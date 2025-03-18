@@ -2,7 +2,8 @@ import type { Route } from "./+types/Kitchen & Bath";
 import { motion } from 'framer-motion';
 import Header from '~/components/Header';
 import Hero from '~/components/Hero';
-import Carousel from '~/components/Carousel';
+import Carousel from '~/components/CarouselKitchen';
+import CarouselBath from '~/components/CarouselBath';
 import ContactBanner from '~/components/ContactBanner';
 import Commitment from '~/components/PreconstructionSteps';
 import ServiceCard from '~/components/ServiceCard';
@@ -107,7 +108,7 @@ export default function KitchenAndBath() {
         <h2 className='text-norange text-center font-bold text-3xl md:text-5xl'>
           Bathroom Remodeling:
         </h2>
-        <Carousel />
+        <CarouselBath />
         <p className='mr-auto ml-auto max-w-5xl text-black text-xl text-center p-10'>
           Imagine your dream bathroom. A serene space where you can unwind after
           a long day or invigorate your mornings. Whether you're dreaming of a
