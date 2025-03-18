@@ -97,11 +97,11 @@ export function BeforeAfter({
 
   return (
     <div
-      className={className}
+      className={`m-0 border-2 border-white rounded-lg ${className}`}
       style={{
         position: `relative`,
         overflow: `hidden`,
-        width: 'fit-content',
+        width: '26rem',
         cursor: 'e-resize',
         userSelect: 'none',
         ...style,
