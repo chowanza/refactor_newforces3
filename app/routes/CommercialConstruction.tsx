@@ -9,6 +9,7 @@ import Selector from "~/components/ImageSelector";
 import Footer from "~/components/Footer";
 import CallToAction from "../components/CallToAction";
 import Services from "~/components/Services";
+import { BeforeAfter } from '~/components/BeforeAfter';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -42,6 +43,27 @@ export default function CommercialConstruction() {
         </div>
       </div>
       <Services serviceType={1} />
+      <section className="flex flex-col justify-center items-center">
+        <h2 className='md:text-3xl text-4xl text-norange lg:text-5xl font-bold  mb-2'>Before & After</h2>
+        <div className="flex gap-5 justify-center items-center flex-col w-full">
+          <div className='flex flex-col md:flex-row justify-center items-center gap-5'>
+            <div className='w-[26rem]'>
+              <BeforeAfter beforeImage='/ba10.webp' afterImage='/ba9.webp' />
+            </div>
+            <div className='w-[26rem] '>
+              <BeforeAfter beforeImage='/ba12.webp' afterImage='/ba11.webp' />
+            </div>
+          </div>
+          <div className='flex flex-col md:flex-row justify-center items-center gap-5'>
+            <div className='w-[26rem]'>
+              <BeforeAfter beforeImage='/ba6.webp' afterImage='/ba5.webp' />
+            </div>
+            <div className='w-[26rem]'>
+              <BeforeAfter beforeImage='/ba8.webp' afterImage='/ba7.webp' />
+            </div>
+          </div>
+        </div>
+      </section>
       <div className="mr-auto ml-auto max-w-7xl grid  md:grid-cols-2 grid-cols-none border-4 m-10 rounded-3xl justify-center items-center ">
         <Selector images={atNewForce}/>
         <div className="p-6">

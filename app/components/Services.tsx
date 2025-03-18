@@ -11,7 +11,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, Icon, description, list }) => {
   return (
-    <div className='px-8 md:py-6 py-6 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg flex flex-col items-center text-gray-600 h-[25rem] w-[24rem]'>
+    <div className='px-8 md:py-6 py-6 bg-white border shadow-[0px_0px_20px_1px_#00000024] rounded-lg flex flex-col items-center text-gray-600 h-fit max-h-[28rem] w-[24rem] '>
       <div className='flex flex-col items-start justify-center gap-4'>
         <div className='flex items-start justify-start gap-4'>
           <h3 className='text-[#f97316] text-start text-xl font-semibold'>
