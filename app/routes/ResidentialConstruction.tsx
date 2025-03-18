@@ -1,5 +1,5 @@
 import type { Route } from "./+types/ResidentialConstruction";
-import Header from "../components/Header";
+//import Header from "../components/Header";
 import Hero from "../components/Hero";
 import InfoCard from "../components/InfoCard";
 import {Card} from "flowbite-react"
@@ -51,7 +51,7 @@ const handleHeroButtonClick = () => {
 export default function ResidentialConstruction() {
   return (
     <>
-    <Header currentPage="residential"/>
+    {/*<Header currentPage="residential"/>*/}
     <Hero
         title="Sarasota’s Most Trusted Residential Construction Experts"
         subtitle="Exceptional Residential Construction & Remodeling"

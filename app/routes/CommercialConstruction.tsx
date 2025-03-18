@@ -1,5 +1,5 @@
 import type { Route } from "./+types/CommercialConstruction";
-import Header from "../components/Header";
+//import Header from "../components/Header";
 import Hero from "../components/Hero";
 import InfoCard from "~/components/InfoCard";
 import Card from "~/components/PreconstructionSteps";
@@ -24,7 +24,7 @@ export default function CommercialConstruction() {
   
   return (
     <div>
-    <Header currentPage="commercialconstruction"/>
+    {/*<Header currentPage="commercialconstruction"/>*/}
     <Hero 
       title="Top-Rated Commercial Construction in Sarasota, FL – Get a Free Quote!" 
       subtitle="Exceptional Residential Construction & Remodeling" 

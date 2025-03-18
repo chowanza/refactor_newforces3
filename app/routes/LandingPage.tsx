@@ -1,5 +1,5 @@
 import type { Route } from "./+types/LandingPage";
-import Header from "../components/Header";
+//import Header from "../components/Header";
 import Hero from "../components/Hero";
 import CallToAction from "../components/CallToAction";
 import Mission from "~/components/Mission";
@@ -138,7 +138,7 @@ const handleGetQuoteClick = () => {
 export default function LandingPage() {
   return (
     <>
-    <Header currentPage="roofing"/>
+    {/*<Header currentPage="roofing"/>*/}
     <Hero 
       title="New Force Construction" 
       subtitle="" 

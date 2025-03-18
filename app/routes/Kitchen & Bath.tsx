@@ -1,6 +1,6 @@
 import type { Route } from "./+types/Kitchen & Bath";
 import { motion } from 'framer-motion';
-import Header from '~/components/Header';
+//import Header from '~/components/Header';
 import Hero from '~/components/Hero';
 import Carousel from '~/components/CarouselKitchen';
 import CarouselBath from '~/components/CarouselBath';
@@ -23,7 +23,7 @@ export function meta({}: Route.MetaArgs) {
 export default function KitchenAndBath() {
   return (
     <div>
-      <Header currentPage='kitchen' />
+      {/*<Header currentPage='kitchen' />*/}
       <Hero
         backgroundImage='/hero-saratosa.webp'
         buttonText='About Us'

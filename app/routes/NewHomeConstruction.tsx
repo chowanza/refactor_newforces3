@@ -1,5 +1,5 @@
 import type { Route } from './+types/NewHomeConstruction';
-import Header from '../components/Header';
+//import Header from '../components/Header';
 import Hero from '~/components/Hero';
 import Images from '~/components/ImageSelector';
 import ContactBanner from '~/components/ContactBanner';
@@ -32,7 +32,7 @@ export default function NewForceConstruction() {
   ];
   return (
     <div>
-      <Header currentPage='newhomeconstruction' />
+      {/*<Header currentPage='newhomeconstruction' />*/}
       <Hero
         backgroundImage='/hero-saratosa.webp'
         title='Build Your Dream Home in Sarasota – Free Consultation!'
