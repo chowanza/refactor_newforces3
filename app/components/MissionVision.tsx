@@ -71,8 +71,8 @@ const MissionVision: React.FC<MissionProps> = ({
       viewport={{ once: true }}
     >
       <div
-        className={`flex gap-5 justify-center ${
-          inverted ? 'flex-row-reverse' : 'flex-row'
+        className={`flex gap-5 justify-center flex-col ${
+          inverted ? 'md:flex-row-reverse' : 'md:flex-row'
         }`}
       >
         <div
