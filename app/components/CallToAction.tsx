@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ContactoModal from './ContactoModal'; // Asegúrate de importar el modal
 import { LuHouse, LuBuilding, LuPhone } from 'react-icons/lu';
 
 interface CardProps {
@@ -8,6 +9,7 @@ interface CardProps {
   buttonText: string;
   isActive: boolean;
   onSelect: () => void;
+  onOpenModal: (selectedProduct: string) => void; // Nueva prop para abrir el modal
 }
 
 const CardCTA: React.FC<CardProps> = ({
@@ -17,6 +19,7 @@ const CardCTA: React.FC<CardProps> = ({
   buttonText,
   isActive,
   onSelect,
+  onOpenModal, // Se obtiene la función para abrir el modal
 }) => {
   return (
     <div
@@ -33,10 +36,11 @@ const CardCTA: React.FC<CardProps> = ({
         <Icon />
       </div>
       <h2 className='self-center text-xl text-[#1b355b]'>{title}</h2>
-      <p className='self-center text-center text-sm text-[#3b557b]'>
-        {description}
-      </p>
-      <button className='bg-[#12233d] text-white py-2 px-4 flex justify-between text-base rounded-lg group hover:bg-[#22334d]'>
+      <p className='self-center text-center text-sm text-[#3b557b]'>{description}</p>
+      <button
+        className='bg-[#12233d] text-white py-2 px-4 flex justify-between text-base rounded-lg group hover:bg-[#22334d]'
+        onClick={() => onOpenModal(title)} // Abre el modal con el título del producto seleccionado
+      >
         {buttonText}{' '}
         <span className='group-hover:translate-x-2 transition-all'>&gt;</span>
       </button>
@@ -46,6 +50,18 @@ const CardCTA: React.FC<CardProps> = ({
 
 const CallToAction: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // Estado para controlar la apertura del modal
+  const [selectedProduct, setSelectedProduct] = useState<string>(''); // Estado para almacenar el producto seleccionado
+
+  const openModal = (product: string) => {
+    setSelectedProduct(product); // Guarda el producto seleccionado
+    setIsModalOpen(true); // Abre el modal
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false); // Cierra el modal
+  };
+
   return (
     <section className='flex flex-col items-center justify-evenly min-h-[90vh] gap-5 p-8'>
       <div className='flex flex-col items-center justify-between gap-6'>
@@ -68,6 +84,7 @@ const CallToAction: React.FC = () => {
           buttonText='Get a Free Quote Today!'
           isActive={activeIndex === 0}
           onSelect={() => setActiveIndex(0)}
+          onOpenModal={openModal} // Pasa la función para abrir el modal
         />
         <CardCTA
           Icon={LuBuilding}
@@ -76,6 +93,7 @@ const CallToAction: React.FC = () => {
           buttonText='Request Your Free Estimate Now!'
           isActive={activeIndex === 1}
           onSelect={() => setActiveIndex(1)}
+          onOpenModal={openModal} // Pasa la función para abrir el modal
         />
         <CardCTA
           Icon={LuPhone}
@@ -84,8 +102,17 @@ const CallToAction: React.FC = () => {
           buttonText='Start Your Project – Contact Us!'
           isActive={activeIndex === 2}
           onSelect={() => setActiveIndex(2)}
+          onOpenModal={openModal} // Pasa la función para abrir el modal
         />
       </div>
+
+      {/* Modal */}
+      {isModalOpen && (
+        <ContactoModal
+          selectedProduct={selectedProduct}
+          closeContactPanel={closeModal} // Función para cerrar el modal
+        />
+      )}
     </section>
   );
 };

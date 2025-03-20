@@ -29,6 +29,16 @@ const Hero: React.FC<HeroProps> = ({
     }
   };
 
+  // Función para copiar el número de teléfono al portapapeles
+  const handleCopyPhoneNumber = async () => {
+    try {
+      await navigator.clipboard.writeText('(941) 337-0680');
+      alert('Phone number copied to clipboard!');
+    } catch (error) {
+      console.error('Failed to copy text: ', error);
+    }
+  };
+
   return (
     <section
       className='relative flex flex-col min-h-screen bg-cover bg-center pt-10 pb-16 mb-16'
@@ -43,7 +53,23 @@ const Hero: React.FC<HeroProps> = ({
         }}
       ></div>
 
-      {/* Logo responsivo - Absoluto en desktop, relativo en móvil */}
+      {/* Número de teléfono en la esquina superior derecha */}
+      <div className="absolute top-4 right-4 flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-full shadow-md">
+        <img
+          src="/phone.svg" // Reemplaza con el icono de teléfono
+          alt="Phone icon"
+          className="w-6 h-6 object-contain"
+        />
+        <p className="text-lg md:text-xl font-bold">(941) 337-0680</p>
+        <button
+          className="text-white ml-2 p-1 rounded bg-[#f97316] hover:bg-[#f86306] text-sm"
+          onClick={handleCopyPhoneNumber}
+        >
+          Copy
+        </button>
+      </div>
+
+      {/* Logo responsivo */}
       <div className="relative z-50 md:absolute md:top-4 md:left-4 flex justify-center md:justify-start mb-8 md:mb-0">
         <div className="w-[180px] sm:w-[200px] md:w-[120px] lg:w-[160px] xl:w-[180px]">
           <img

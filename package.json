@@ -9,6 +9,10 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@react-router/express": "^7.1.1",
     "@react-router/node": "^7.1.1",
     "@vercel/node": "^3.2.25",
@@ -16,6 +20,7 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.21.1",
     "flowbite-react": "^0.10.2",
+    "font-awesome": "^4.7.0",
     "framer-motion": "^12.5.0",
     "isbot": "^5.1.17",
     "react": "^19.0.0",
