@@ -20,6 +20,15 @@ const Hero: React.FC<HeroProps> = ({
   backgroundImage,
   home,
 }) => {
+  // Handler for the "Start Your Project!" button
+  const handleStartProjectClick = () => {
+    // Find the section with ID "call-to-action" and scroll to it
+    const callToActionSection = document.getElementById('call-to-action');
+    if (callToActionSection) {
+      callToActionSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
       className='relative flex flex-col min-h-screen bg-cover bg-center pt-10 pb-16 mb-16'
@@ -65,7 +74,10 @@ const Hero: React.FC<HeroProps> = ({
           <div>
             <h2 className='font-bold text-2xl text-white'>Get a Free Quote Today!</h2>
             <div className='flex items-center justify-center m-4'>
-              <button className='px-10 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl text-white'>
+              <button 
+                className='px-10 py-3 rounded-lg bg-[#f97316] hover:bg-[#f86306] h-full cursor-pointer md:text-2xl text-xl text-white'
+                onClick={handleStartProjectClick}
+              >
                 Start Your Project!
               </button>
             </div>

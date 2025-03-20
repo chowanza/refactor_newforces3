@@ -150,7 +150,10 @@ export default function LandingPage() {
       />
       <Mission title="Our Mission" image="/house.webp"
                     text="Our mission is to create remarkable spaces that stand the test of time. From engineering and permits to execution and meticulous quality control, we manage every detail to empower our clients to focus on their vision and goals. Backed by our investment division, ZZZ Ventures Capital, we offer a full-service approach that merges top-tier craftsmanship with strategic financial insight. By uniting construction expertise with investment intelligence, we transform spaces into assets that generate lasting value and foster enduring trust." />
-      <CallToAction />     
+      {/* Add id attribute to the div wrapping CallToAction */}
+      <div id="call-to-action">
+        <CallToAction />
+      </div>     
       <section className="px-6 py-8 bg-white">
       {/* Section Title */}
       <div className="text-center mb-8">
