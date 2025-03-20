@@ -71,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({
 
       {/* Logo responsivo */}
       <div className="relative z-50 md:absolute md:top-4 md:left-4 flex justify-center md:justify-start mb-8 md:mb-0">
-        <div className="w-[180px] sm:w-[200px] md:w-[120px] lg:w-[160px] xl:w-[180px]">
+        <div className="w-[140px] sm:w-[160px] md:w-[100px] lg:w-[120px] xl:w-[140px]">
           <img
             src="/logo-newforce.webp"
             alt="Logo"
