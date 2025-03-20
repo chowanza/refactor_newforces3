@@ -8,6 +8,7 @@ interface MissionProps {
   text: string;
   image: string;
   scale?: number;
+  inverted?: boolean;
 }
 
 // Componente para carga diferida de la imagen
@@ -54,24 +55,38 @@ const LazyImage: React.FC<{ src: string; alt?: string; scale?: number }> = ({
   );
 };
 
-const Mission: React.FC<MissionProps> = ({ title, text, image, scale = 1 }) => {
+const MissionVision: React.FC<MissionProps> = ({
+  title,
+  text,
+  image,
+  scale = 1,
+  inverted = false,
+}) => {
   return (
     <motion.div
-      className='mission-component'
+      className='mission-component flex flex-col'
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       viewport={{ once: true }}
     >
-      <div className='mission-text'>
-        <h2>{title}</h2>
-        <p>{text}</p>
-      </div>
-      <div className='mission-image'>
-        <LazyImage src={image} alt='House illustration' scale={scale} />
+      <div
+        className={`flex gap-5 justify-center ${
+          inverted ? 'flex-row-reverse' : 'flex-row'
+        }`}
+      >
+        <div
+          className={`mission-text ${inverted ? 'text-right' : 'text-left'}`}
+        >
+          <h2>{title}</h2>
+          <p>{text}</p>
+        </div>
+        <div className='mission-image self-center'>
+          <LazyImage src={image} alt='House illustration' scale={scale} />
+        </div>
       </div>
     </motion.div>
   );
 };
 
-export default Mission;
+export default MissionVision;
