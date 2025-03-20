@@ -31,7 +31,12 @@ export default function CommercialConstruction() {
       subtitle="Exceptional Residential Construction & Remodeling" 
       description="Building Excellence for Your Business Design, Build, Renovate – Your Vision, Our Expertise" 
       buttonText="About" 
-      onButtonClick={()=>{}} 
+      onButtonClick={() => {
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth",
+        });
+      }} 
       backgroundImage="/hero-saratosa.webp" />
       <div>
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl mb-20">Your Trusted Partner for Commercial Construction</h2>
@@ -85,7 +90,9 @@ export default function CommercialConstruction() {
           <Card descripcion="Risk assessment and mitigation strategies" number="04" icon="/Carretilla.svg" imageSrc="/72.webp" />
         </div>
       </div>
-      <CallToAction />
+      <div id="call-to-action">
+        <CallToAction />
+      </div>  
       <div className="mt-20 md:mt-32">
         <h2 className="text-norange text-center font-bold text-3xl md:text-5xl">Design-Build Services</h2>
         <p className="mr-auto ml-auto max-w-5xl text-black text-xl text-center p-10">Simplify your project with our design-build approach, where creativity meets efficiency. We manage both design and construction under one roof, ensuring seamless coordination and better outcomes.</p>

@@ -38,7 +38,12 @@ export default function NewForceConstruction() {
         title='Build Your Dream Home in Sarasota – Free Consultation!'
         buttonText='About Us'
         description=''
-        onButtonClick={() => {}}
+        onButtonClick={() => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        }}
         subtitle='Custom Home Builders in Sarasota, Florida'
       />
       <div className='m-5 md:ml-20 md:mr-20'>
@@ -62,7 +67,9 @@ export default function NewForceConstruction() {
           creating a lifetime of memories in beautiful Sarasota.
         </p>
       </div>
-      <CallToAction />
+      <div id="call-to-action">
+        <CallToAction />
+      </div>  
       <div className='min-h-screen bg-white'>
         <ConstructionProgressTracker option={1} />
       </div>

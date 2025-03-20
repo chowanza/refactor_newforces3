@@ -57,7 +57,12 @@ export default function ResidentialConstruction() {
         subtitle="Exceptional Residential Construction & Remodeling"
         description="Experience Stress-Free Projects with New Force Construction"
         buttonText="About Us"
-        onButtonClick={handleHeroButtonClick}
+        onButtonClick={() => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        }}
         backgroundImage="/hero-saratosa.webp"
       />
       <section className="px-4 py-12 bg-gray-50">
@@ -121,7 +126,9 @@ export default function ResidentialConstruction() {
     </Card>
   </div>
 </section>
-<CallToAction />
+<div id="call-to-action">
+  <CallToAction />
+</div>  
 <ContactBanner />
 <section className="px-6 py-16 bg-white text-center">
         <h2 className="text-2xl md:text-5xl font-bold text-norange mt-10 mb-10">

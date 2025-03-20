@@ -30,7 +30,12 @@ export default function KitchenAndBath() {
         description='Transform Your Sarasota Home with Exquisite Kitchen & Bath Renovations'
         subtitle='Remodeling Specialists in Sarasota, Florida'
         title='Transform Your Kitchen & Bath – Sarasota’s #1 Renovation Experts'
-        onButtonClick={() => {}}
+        onButtonClick={() => {
+          window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth",
+          });
+        }}  
       />
       <motion.div
         className='m-5 md:ml-20 md:mr-20'
@@ -117,7 +122,9 @@ export default function KitchenAndBath() {
           vision to life.
         </p>
       </motion.div>
-      <CallToAction />
+      <div id="call-to-action">
+        <CallToAction />
+      </div>  
       <ContactBanner />
       <motion.div
         className='m-5 md:ml-20 md:mr-20'
